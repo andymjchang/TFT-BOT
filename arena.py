@@ -115,6 +115,22 @@ class Arena:
         champion.index = comps.COMP[champion.name]["board_position"]
         self.board_size += champion.size
 
+        # Check if kayle was spawned and select green augment
+        if champion.name not in ["Zoe", "Garen", "Sivir", "Riven", "Zyra"]:
+            return
+        sleep(0.5)
+        anvil_msg: str = ocr.get_text(
+        screenxy=screen_coords.ANVIL_MSG_POS.get_coords(),
+        scale=3,
+        psm=7,
+        whitelist=ocr.ALPHABET_WHITELIST,
+        )
+        if anvil_msg in ["ChooseOne"]:
+            sleep(2)
+            print("  Choosing item")
+            mk_functions.left_click(screen_coords.BUY_LOC[3].get_coords())
+            sleep(0.5)
+
     def move_unknown(self) -> None:
         """Moves unknown champion to the board"""
         for index, champion in enumerate(self.bench):
@@ -359,7 +375,8 @@ class Arena:
                 if arena_functions.get_level() != 9:
                     mk_functions.buy_xp()
                     print("  Purchasing XP")
-                if arena_functions.get_level() != 10:        
+                # Don't roll on 8, go 9 to find legendaries 
+                if arena_functions.get_level() != 8:        
                     mk_functions.reroll()
                     print("  Rerolling shop")
             shop: list = arena_functions.get_shop()

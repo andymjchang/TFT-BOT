@@ -11,7 +11,7 @@ e.g.2 want either "Sentinel" or "True Damage" Ekko, set it to "headliner": [True
 COMP = {
     "Neeko": {
         "board_position": 26,
-        "items": [],
+        "items": ["WarmogsArmor"],
         "level": 2,
         "final_comp": True
     },
@@ -35,13 +35,13 @@ COMP = {
     },
     "Soraka": {
         "board_position": 9,
-        "items": ["ThiefsGloves"],
+        "items": [],
         "level": 2,
         "final_comp": True
     },
     "Zoe": {
         "board_position": 10,
-        "items": [],
+        "items": ["HeavenlyEmblem"],
         "level": 2,
         "final_comp": True
     },
