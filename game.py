@@ -281,7 +281,7 @@ class Game:
             self.arena.final_comp_check()
         self.arena.bench_cleanup()
 
-        if self.round[0] in game_assets.ITEM_PLACEMENT_ROUNDS:
+        if self.round[0] not in game_assets.PICKUP_ROUNDS:
             sleep(1)
             self.arena.place_items()
         self.end_round_tasks()

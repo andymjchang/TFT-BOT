@@ -353,14 +353,15 @@ class Arena:
     def spend_gold(self, speedy=False) -> None:
         """Spends gold every round"""
         first_run = True
-        min_gold = 100 if speedy else (24 if self.spam_roll else 56)
+        min_gold = 100 if speedy else (24 if self.spam_roll else 54)
         while first_run or arena_functions.get_gold() >= min_gold:
             if not first_run:
-                if arena_functions.get_level() != 10:
+                if arena_functions.get_level() != 9:
                     mk_functions.buy_xp()
                     print("  Purchasing XP")
-                mk_functions.reroll()
-                print("  Rerolling shop")
+                if arena_functions.get_level() != 10:        
+                    mk_functions.reroll()
+                    print("  Rerolling shop")
             shop: list = arena_functions.get_shop()
 
             # For set 11 encounter round shop delay and choose items popup
@@ -480,8 +481,9 @@ class Arena:
         if health > 0:
             print(f"  Health: {health}")
             if not self.spam_roll and health < 30:
-                print("    Health under 30, spam roll activated")
-                self.spam_roll = True
+                # print("    Health under 30, spam roll activated")
+                # self.spam_roll = True
+                pass
         else:
             print("  Health check failed")
 
