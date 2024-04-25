@@ -75,7 +75,7 @@ COMP = {
         "level": 2,
         "final_comp": False
     },
-    "Hwei": {
+    "Lissandra": {
         "board_position": 1,
         "items": [],
         "level": 2,
