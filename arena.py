@@ -265,7 +265,7 @@ class Arena:
     def add_item_to_champ(self, item_index: int, champ: Champion) -> None:
         """Takes item index and champ and applies the item"""
         item = self.items[item_index]
-        if item in game_assets.FULL_ITEMS or item in game_assets.ORNN_ITEMS or item in game_assets.SUPPORT_ITEMS:
+        if item in game_assets.FULL_ITEMS or item in game_assets.ORNN_ITEMS or item in game_assets.SUPPORT_ITEM or item in game_assets.NON_CRAFTABLE_ITEMS:
             if item in champ.build or (1 == 1):
                 mk_functions.left_click(
                     screen_coords.ITEM_POS[item_index][0].get_coords()
