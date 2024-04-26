@@ -52,7 +52,7 @@ COMP = {
         "final_comp": True
     },
     "Wukong": {
-        "board_position": 14,
+        "board_position": 23,
         "items": ["BrambleVest", "DragonsClaw", "WarmogsArmor"],
         "level": 3,
         "final_comp": True
@@ -76,7 +76,7 @@ COMP = {
         "final_comp": False
     },
     "XayahRakan": {
-        "board_position": 20,
+        "board_position": 25,
         "items": [],
         "level": 3,
         "final_comp": True
