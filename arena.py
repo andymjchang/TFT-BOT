@@ -243,6 +243,7 @@ class Arena:
         if anvil_msg == "ChooseOne":
             print("  Clear anvil")
             mk_functions.left_click(screen_coords.BUY_LOC[2].get_coords())
+            mk_functions.left_click(screen_coords.BUY_LOC[3].get_coords())
             sleep(1)
 
     def place_items(self) -> None:

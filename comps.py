@@ -17,13 +17,13 @@ COMP = {
     },
     "Zyra": {
         "board_position": 1,
-        "items": ["StatikkShiv", "SpearofShojin", "SpearofShojin"],
+        "items": ["SpearofShojin", "NashorsTooth", "SpearofShojin"],
         "level": 2,
         "final_comp": True
     },
     "Janna": {
         "board_position": 2,
-        "items": ["GuinsoosRageblade", "RabadonsDeathcap", "GuinsoosRageblade"],
+        "items": ["GuinsoosRageblade", "StatikkShiv", "RabadonsDeathcap"],
         "level": 2,
         "final_comp": True
     },
