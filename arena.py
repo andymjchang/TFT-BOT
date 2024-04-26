@@ -118,7 +118,7 @@ class Arena:
         # Check if kayle was spawned and select green augment
         if champion.name not in ["Zoe", "Garen", "Sivir", "Riven", "Zyra"]:
             return
-        sleep(0.5)
+        sleep(1.0)
         anvil_msg: str = ocr.get_text(
         screenxy=screen_coords.ANVIL_MSG_POS.get_coords(),
         scale=3,
