@@ -15,32 +15,38 @@ COMP = {
         "level": 3,
         "final_comp": True
     },
+    "Zyra": {
+        "board_position": 1,
+        "items": ["StatikkShiv", "SpearofShojin", "SpearofShojin"],
+        "level": 2,
+        "final_comp": True
+    },
+    "Janna": {
+        "board_position": 2,
+        "items": ["GuinsoosRageblade", "RabadonsDeathcap", "GuinsoosRageblade"],
+        "level": 2,
+        "final_comp": True
+    },
     "Neeko": {
-        "board_position": 26,
+        "board_position": 22,
         "items": ["WarmogsArmor", "DragonsClaw", "Crownguard"],
         "level": 2,
         "final_comp": True
     },
     "Riven": {
-        "board_position": 22,
+        "board_position": 26,
         "items": ["ThiefsGloves"],
         "level": 2,
         "final_comp": True
     },
-    "Janna": {
-        "board_position": 8,
-        "items": ["GuinsoosRageblade", "RabadonsDeathcap", "GuinsoosRageblade"],
-        "level": 2,
-        "final_comp": True
-    },
     "Soraka": {
-        "board_position": 9,
-        "items": [],
+        "board_position": 5,
+        "items": ["BlueBuff", "RedBuff"],
         "level": 2,
         "final_comp": True
     },
     "Zoe": {
-        "board_position": 10,
+        "board_position": 4,
         "items": ["HeavenlyEmblem"],
         "level": 2,
         "final_comp": True
@@ -51,12 +57,6 @@ COMP = {
         "level": 3,
         "final_comp": True
     },
-    "Zyra": {
-        "board_position": 7,
-        "items": ["StatikkShiv", "SpearofShojin", "SpearofShojin"],
-        "level": 2,
-        "final_comp": True
-    },
     "Garen": {
         "board_position": 25,
         "items": ["SunfireCape", "GargoyleStoneplate", "GargoyleStoneplate"],
@@ -64,7 +64,7 @@ COMP = {
         "final_comp": False
     },
     "Sivir": {
-        "board_position": 1,
+        "board_position": 3,
         "items": ["StatikkShiv"],
         "level": 2,
         "final_comp": False
@@ -166,6 +166,7 @@ AUGMENTS: list[str] = [
     "Dragonlord Crown",
     "Sage Crown",
     "Shopping Spree",
+    "Ba-BOOM!",
 ]
 
 AVOID_AUGMENTS: list[str] = [
@@ -180,6 +181,7 @@ AVOID_AUGMENTS: list[str] = [
     "Recombobulator",
     "Forge",
     "Exiles"
+    "Lucky Streak"
 ]
 
 
