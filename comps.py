@@ -35,13 +35,13 @@ COMP = {
     },
     "Soraka": {
         "board_position": 9,
-        "items": ["InvokerEmblem"],
+        "items": [],
         "level": 2,
         "final_comp": True
     },
     "Zoe": {
         "board_position": 10,
-        "items": ["HeavenlyEmblem", "DragonlordEmblem", "SageEmblem"],
+        "items": ["HeavenlyEmblem"],
         "level": 2,
         "final_comp": True
     },
