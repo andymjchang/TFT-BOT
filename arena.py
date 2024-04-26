@@ -501,10 +501,9 @@ class Arena:
         health: int = arena_functions.get_health()
         if health > 0:
             print(f"  Health: {health}")
-            if not self.spam_roll and health < 20:
+            if not self.spam_roll and health < 30:
                 print("    Health under 30, spam roll activated")
                 self.spam_roll = True
-                pass
         else:
             print("  Health check failed")
 
