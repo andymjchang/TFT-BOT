@@ -108,6 +108,7 @@ AUGMENTS: list[str] = [
     "Magic Wand",
     "Dragon's Spirit",
     "Harmacist",
+    "Shock Treatment",
     "Ascension",
     "Final Ascension",
     "Partial Ascension",
