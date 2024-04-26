@@ -9,15 +9,15 @@ e.g.2 want either "Sentinel" or "True Damage" Ekko, set it to "headliner": [True
 """
 
 COMP = {
-    "Neeko": {
-        "board_position": 26,
-        "items": ["WarmogsArmor"],
-        "level": 2,
-        "final_comp": True
-    },
     "Diana": {
         "board_position": 24,
         "items": ["SunfireCape", "GargoyleStoneplate", "GargoyleStoneplate"],
+        "level": 3,
+        "final_comp": True
+    },
+    "Neeko": {
+        "board_position": 26,
+        "items": ["WarmogsArmor", "DragonsClaw", "Crownguard"],
         "level": 2,
         "final_comp": True
     },
@@ -35,13 +35,13 @@ COMP = {
     },
     "Soraka": {
         "board_position": 9,
-        "items": [],
+        "items": ["InvokerEmblem"],
         "level": 2,
         "final_comp": True
     },
     "Zoe": {
         "board_position": 10,
-        "items": ["HeavenlyEmblem"],
+        "items": ["HeavenlyEmblem", "DragonlordEmblem", "SageEmblem"],
         "level": 2,
         "final_comp": True
     },
@@ -64,7 +64,7 @@ COMP = {
         "final_comp": False
     },
     "Sivir": {
-        "board_position": 2,
+        "board_position": 1,
         "items": ["StatikkShiv"],
         "level": 2,
         "final_comp": False
@@ -76,7 +76,7 @@ COMP = {
         "final_comp": False
     },
     "Lissandra": {
-        "board_position": 1,
+        "board_position": 2,
         "items": [],
         "level": 2,
         "final_comp": False
@@ -98,7 +98,6 @@ AUGMENTS: list[str] = [
     "Two Healthy",
     "Combat Caster",
     "Enter the Dragon",
-    "Slammin'",
     "Heavy Hitters",
     "Featherweights",
     "Pumping Up",
@@ -115,6 +114,7 @@ AUGMENTS: list[str] = [
     "Harmacist",
     "Ascension",
     "Tiny Titans",
+    "Tiny, but Deadly",
     "Jeweled Lotus",
     "That's Jazz Baby!",
     "You Have My Bow",
@@ -165,9 +165,17 @@ AUGMENTS: list[str] = [
     "Combat Training",
     "Meditation",
     "Axiom Arc",
+    "Tiniest Titan",
+    "Impenetrable Bulwark", 
+    "Unleashed Arcana",
+    "Invoker Crown",
+    "Dragonlord Crown",
+    "Sage Crown",
+    "Shopping Spree",
 ]
 
 AVOID_AUGMENTS: list[str] = [
+    "March of Progress",
     "Stationary Support",
     "Component Buffet",
     "Call to Chaos",
@@ -190,7 +198,7 @@ def champions_to_buy() -> dict:
         elif champion_data["level"] == 2:
             champs_to_buy[champion] = 3
         elif champion_data["level"] == 3:
-            champs_to_buy[champion] = 9
+            champs_to_buy[champion] = 10 # Helps when bot makes counting/combine mistakes
         else:
             raise ValueError("Comps.py | Champion level must be a valid level (1-3)")
     return champs_to_buy

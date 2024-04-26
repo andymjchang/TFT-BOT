@@ -4,7 +4,7 @@ Contains static item & champion data
 
 BASIC_ITEM: set[str] = {"BFSword","ChainVest","GiantsBelt","NeedlesslyLargeRod",
                             "NegatronCloak","RecurveBow","SparringGloves","Spatula",
-                            "TearoftheGoddess"}
+                            "TearoftheGoddess", "ChampionDuplicator", "LesserChampionDuplicator"}
 
 COMBINED_ITEMS: set[str] = {"DryadEmblem","FatedEmblem","GhostlyEmblem","HeavenlyEmblem",
                             "MythicEmblem","PorcelainEmblem","StoryweaverEmblem","UmbralEmblem",
