@@ -38,6 +38,8 @@ ORNN_ITEMS: set[str] = {"AnimaVisage","BlacksmithsGloves","DeathfireGrasp","Deat
                         "MogulsMail","Rocket-PropelledFist","SnipersFocus","TrickstersGlass",
                         "ZhonyasParadox"}
 
+DUPLICATORS: set[str] = {"ChampionDuplicator", "LesserChampionDuplicator"}
+
 ITEMS: set[str] = BASIC_ITEM.union(COMBINED_ITEMS).union(SUPPORT_ITEM).union(NON_CRAFTABLE_ITEMS).union(ORNN_ITEMS)
 
 CHAMPIONS: dict[str, dict[str, int]] = {

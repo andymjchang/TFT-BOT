@@ -72,13 +72,7 @@ COMP = {
     "Irelia": {
         "board_position": 0,
         "items": [],
-        "level": 2,
-        "final_comp": False
-    },
-    "Lissandra": {
-        "board_position": 2,
-        "items": [],
-        "level": 2,
+        "level": 3,
         "final_comp": False
     },
     "XayahRakan": {

@@ -265,15 +265,17 @@ class Arena:
     def add_item_to_champ(self, item_index: int, champ: Champion) -> None:
         """Takes item index and champ and applies the item"""
         item = self.items[item_index]
-        if item in game_assets.FULL_ITEMS or item in game_assets.ORNN_ITEMS or item in game_assets.SUPPORT_ITEM or item in game_assets.NON_CRAFTABLE_ITEMS:
+        if item in game_assets.FULL_ITEMS or item in game_assets.ORNN_ITEMS or item in game_assets.SUPPORT_ITEM or item in game_assets.NON_CRAFTABLE_ITEMS or item in game_assets.DUPLICATORS:
             if item in champ.build or (1 == 1):
                 mk_functions.left_click(
                     screen_coords.ITEM_POS[item_index][0].get_coords()
                 )
                 mk_functions.left_click(champ.coords)
                 print(f"  Placed {item} on {champ.name}")
-                champ.completed_items.append(item)
-                champ.build.remove(item)
+                if item not in game_assets.DUPLICATORS:
+                    champ.completed_items.append(item)
+                if item in champ.build:
+                    champ.build.remove(item)
                 self.items[self.items.index(item)] = None
         elif len(champ.current_building) == 0:
             item_to_move: None = None
