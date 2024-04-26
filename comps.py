@@ -88,6 +88,9 @@ COMP = {
 # The ones on the top will be prioritized for selection.
 # For those augments names with suffixes like I, II, III, such as 'Cybernetic Uplink II',
 # You only need to add 'Cybernetic Uplink' in the list to cover all three levels.
+
+# Lots of subpar prismatic augments are added to avoid taking an augment that the bot doesn't know how to use,
+# or that might confuse the bots positioning logic.
 AUGMENTS: list[str] = [
     "Two Healthy",
     "Combat Caster",
@@ -96,9 +99,8 @@ AUGMENTS: list[str] = [
     "Featherweights",
     "Pumping Up",
     "Stand United",
-    "Drop Blossom",
+    "Drop Blossom!",
     "Inspiring Epitaph",
-    "Buried Treasures",
     "Stimpack",
     "Healing Orbs",
     "Sharing is Caring",
@@ -107,6 +109,8 @@ AUGMENTS: list[str] = [
     "Dragon's Spirit",
     "Harmacist",
     "Ascension",
+    "Final Ascension",
+    "Partial Ascension",
     "Tiny Titans",
     "Tiny, but Deadly",
     "Jeweled Lotus",
@@ -165,8 +169,27 @@ AUGMENTS: list[str] = [
     "Invoker Crown",
     "Dragonlord Crown",
     "Sage Crown",
+    "Sage Crest",
+    "Dragonlord Crest",
+    "Invoker Crest",
     "Shopping Spree",
     "Ba-BOOM!",
+    "Tons of Stats!",
+    "Epoch",
+    "Patient Study",
+    "Silver Spoon",
+    "Martyr",
+    "Balanced Budget",
+    "Heroic Grab Bag",
+    "Mana Shield",
+    "Level Up",
+    "New Recruit",
+    "Pumping Up",
+    "Buried Treasures",
+    "Altruist Crown",
+    "Altruist Crest",
+    "Prismatic Ticket",
+    "Hedge Fund",
 ]
 
 AVOID_AUGMENTS: list[str] = [
@@ -180,8 +203,9 @@ AVOID_AUGMENTS: list[str] = [
     "Wandering Trainer",
     "Recombobulator",
     "Forge",
-    "Exiles"
-    "Lucky Streak"
+    "Exiles",
+    "Lucky Streak",
+    "It's Going to be Epic"
 ]
 
 
